@@ -7,21 +7,21 @@ public class FlipCoin {
 
     public void coinFlipCalculation() {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter number of time want to flip a coin");
+        System.out.print("Enter number of time want to flip a coin: ");
         int totalTimes = in.nextInt();
         int headCount = 0;
         int tailCount = 0;
         for (int i = 0; i < totalTimes; i++) {
-            int coinFlip = (int) Math.round(Math.random());
-            if (coinFlip == HEAD)
+            double coinFlip = Math.random();
+            if (coinFlip > 0.5)
                 headCount++;
             else
                 tailCount++;
 
         }
         System.out.println("total head and tail count: "+headCount+"&"+tailCount);
-        System.out.println("percentage of head: "+ calculationPercentage(headCount,totalTimes));
-        System.out.println("percentage of Tail: "+ calculationPercentage(tailCount,totalTimes));
+        System.out.println("percentage of head: "+ calculationPercentage(headCount,totalTimes)+"%");
+        System.out.println("percentage of Tail: "+ calculationPercentage(tailCount,totalTimes)+"%");
 
     }
     public double calculationPercentage(int totalCount,double totalTimes){
