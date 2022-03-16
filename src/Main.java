@@ -30,6 +30,8 @@ public class Main {
                     break;
                 case 9: coreJavaPrograms.checkAlphabetVowelOrConsonant();
                     break;
+                case 10: coreJavaPrograms.checkLargestNumber();
+                    break;
                 case 0:
                     System.out.println("Exiting..........");
                     break;

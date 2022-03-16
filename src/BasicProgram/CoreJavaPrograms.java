@@ -104,4 +104,23 @@ public class CoreJavaPrograms {
         String returnValue = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? "is vowel " : "is consonant ";
         System.out.println(ch + " " + returnValue);
     }
+
+    public void checkLargestNumber(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Number 1: ");
+        int numOne = input.nextInt();
+        System.out.print("Enter Number 2: ");
+        int numTwo = input.nextInt();
+        System.out.print("Enter Number 3: ");
+        int numThree = input.nextInt();
+
+        if( numOne >= numTwo && numOne >= numThree)
+            System.out.println(numOne + " is the largest number.");
+
+        else if (numTwo >= numOne && numTwo >= numThree)
+            System.out.println(numTwo + " is the largest number.");
+
+        else
+            System.out.println(numThree + " is the largest number.");
+    }
 }
