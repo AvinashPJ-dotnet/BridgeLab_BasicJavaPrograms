@@ -18,58 +18,55 @@ public class CoreJavaPrograms {
                 tailCount++;
 
         }
-        System.out.println("total head and tail count: "+headCount+"&"+tailCount);
-        System.out.println("percentage of head: "+ calculationPercentage(headCount,totalTimes)+"%");
-        System.out.println("percentage of Tail: "+ calculationPercentage(tailCount,totalTimes)+"%");
+        System.out.println("total head and tail count: " + headCount + "&" + tailCount);
+        System.out.println("percentage of head: " + calculationPercentage(headCount, totalTimes) + "%");
+        System.out.println("percentage of Tail: " + calculationPercentage(tailCount, totalTimes) + "%");
 
     }
-    public double calculationPercentage(int totalCount,double totalTimes){
-        double value=(totalCount/totalTimes);
-        value=value*100;
+
+    public double calculationPercentage(int totalCount, double totalTimes) {
+        double value = (totalCount / totalTimes);
+        value = value * 100;
         return value;
     }
 
     //Program to check year is leap or not
-    public void checkLeapYear(){
+    public void checkLeapYear() {
         System.out.println("enter year to check leap year: ");
         Scanner in = new Scanner(System.in);
-        int year=in.nextInt();
-        if(year%400 == 0 || year % 4 ==0){
-            System.out.println(year+" is a Leap year");
-        }
-        else if (year % 100 == 0){
-            System.out.println(year+" is not a leap year");
-        }
-        else
-            System.out.println(year+" is not a leap year");
+        int year = in.nextInt();
+        if (year % 400 == 0 || year % 4 == 0) {
+            System.out.println(year + " is a Leap year");
+        } else if (year % 100 == 0) {
+            System.out.println(year + " is not a leap year");
+        } else
+            System.out.println(year + " is not a leap year");
     }
 
-    public void calculatePowerOfTwo(int num){
-        if(num>=0 && num<=31)
-        {
+    public void calculatePowerOfTwo(int num) {
+        if (num >= 0 && num <= 31) {
             for (int i = 1; i <= num; i++) {
-                int value=(int)Math.pow(2,i);
-                System.out.println("2 pow "+i+": "+value);
+                int value = (int) Math.pow(2, i);
+                System.out.println("2 pow " + i + ": " + value);
             }
-        }
-        else {
+        } else {
             System.out.println("number should not greater then 31 and less then 0");
             System.exit(0);
         }
 
     }
 
-    public void calculateHarmonicNumber(int number){
-        float harmonicNumber=0.0f;
-        if (number>0){
-            for (int i = 1; i <=number; i++) {
-                harmonicNumber+=(1/(double)i);
+    public void calculateHarmonicNumber(int number) {
+        float harmonicNumber = 0.0f;
+        if (number > 0) {
+            for (int i = 1; i <= number; i++) {
+                harmonicNumber += (1 / (double) i);
             }
         }
-        System.out.println("Harmonic number is: "+harmonicNumber);
+        System.out.println("Harmonic number is: " + harmonicNumber);
     }
 
-    public void findQuotientAndReminder(int dividend,int divisor){
+    public void findQuotientAndReminder(int dividend, int divisor) {
         int quotient = dividend / divisor;
         int remainder = dividend % divisor;
 
@@ -77,7 +74,7 @@ public class CoreJavaPrograms {
         System.out.println("Remainder: " + remainder);
     }
 
-    public void computeSwapTwoNumber(int first,int second){
+    public void computeSwapTwoNumber(int first, int second) {
         System.out.println("--Before swap--");
         System.out.println("First number: " + first);
         System.out.println("Second number: " + second);
@@ -90,12 +87,21 @@ public class CoreJavaPrograms {
         System.out.println("Second number: " + second);
     }
 
-    public void checkNumberEvenOdd(){
+    public void checkNumberEvenOdd() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = input.nextInt();
         String evenOdd = (num % 2 == 0) ? "even " : "odd";//using ternary operator to check condition
 
-        System.out.println(num + " is " + evenOdd+" number");
+        System.out.println(num + " is " + evenOdd + " number");
+    }
+
+    //check alphabet is vowel or consonant
+    public void checkAlphabetVowelOrConsonant() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a Alphabet: ");
+        char ch = input.next().charAt(0);
+        String returnValue = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? "is vowel " : "is consonant ";
+        System.out.println(ch + " " + returnValue);
     }
 }

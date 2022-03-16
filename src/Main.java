@@ -9,7 +9,7 @@ public class Main {
         do {
             System.out.printf("\n1. FlopCoin\n2. Leap Year\n3. Power Of Two\n" +
                     "4. Harmonic\n6. Quotient & Reminder\n7. Swap Two Number\n" +
-                    "8. Even and Odd\n0. Exit\n");
+                    "8. Even or Odd\n9. Vowel or Consonant\n0. Exit\n");
             Scanner in = new Scanner(System.in);
             System.out.print("Enter choice: ");
             ch=in.nextShort();
@@ -28,11 +28,13 @@ public class Main {
                     break;
                 case 8: coreJavaPrograms.checkNumberEvenOdd();
                     break;
+                case 9: coreJavaPrograms.checkAlphabetVowelOrConsonant();
+                    break;
                 case 0:
                     System.out.println("Exiting..........");
                     break;
                 default:
-                    System.out.println("Please select valid choice");
+                    System.out.println("Please select valid choice..");
                     break;
             }
         }while (ch!=0);
