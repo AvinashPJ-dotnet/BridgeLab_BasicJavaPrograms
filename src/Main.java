@@ -32,6 +32,11 @@ public class Main {
                     break;
                 case 10: coreJavaPrograms.checkLargestNumber();
                     break;
+                case 11:
+                    JavaFunctionalProgram javaFunctionalProgram = new JavaFunctionalProgram();
+                    javaFunctionalProgram.TwoDimentionalArray();
+                    break;
+
                 case 0:
                     System.out.println("Exiting..........");
                     break;

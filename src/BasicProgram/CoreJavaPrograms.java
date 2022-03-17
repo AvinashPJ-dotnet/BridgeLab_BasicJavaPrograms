@@ -101,7 +101,8 @@ public class CoreJavaPrograms {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a Alphabet: ");
         char ch = input.next().charAt(0);
-        String returnValue = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? "is vowel " : "is consonant ";
+        char newChar=Character.toUpperCase(ch);
+        String returnValue = (newChar == 'A' || newChar == 'E' || newChar == 'I' || newChar == 'O' || newChar == 'U') ? "is vowel " : "is consonant ";
         System.out.println(ch + " " + returnValue);
     }
 
@@ -113,7 +114,10 @@ public class CoreJavaPrograms {
         int numTwo = input.nextInt();
         System.out.print("Enter Number 3: ");
         int numThree = input.nextInt();
-
+        if(numOne==numTwo && numTwo==numThree && numOne==numThree){
+            System.out.println("Numbers are equal");
+            return;
+        }
         if( numOne >= numTwo && numOne >= numThree)
             System.out.println(numOne + " is the largest number.");
 
