@@ -1,4 +1,4 @@
-package BasicProgram;
+package FunctionProgram;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -22,5 +22,16 @@ public class JavaFunctionalProgram {
         }
         pw.flush();
         pw.close();
+    }
+
+    public void calculateDistance(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter point one:");
+        int pointOne=scanner.nextInt();
+        System.out.print("enter point two:");
+        int pointTwo=scanner.nextInt();
+        double distance=Math.sqrt((pointOne*pointOne)+(pointTwo*pointTwo));
+        System.out.println("Distance is: "+distance);
+
     }
 }

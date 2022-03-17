@@ -1,4 +1,5 @@
 import BasicProgram.*;
+import FunctionProgram.JavaFunctionalProgram;
 
 import java.util.Scanner;
 
