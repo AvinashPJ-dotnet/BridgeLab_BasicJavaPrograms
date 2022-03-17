@@ -72,4 +72,12 @@ public class JavaFunctionalProgram {
             System.out.format("\nroot2 = %.2f-%.2fi", real, imaginary);
         }
     }
+
+    //wind chill program
+    public void checkWindChill(double t,double v){
+        if (t < 50 && v<120 && v>3 ){
+            double wind =(35.74 + (0.6215*t)+((0.4275*t)-35.75)*Math.pow(v,0.16));
+            System.out.format("%.2f",wind);
+        }
+    }
 }

@@ -8,7 +8,7 @@ public class MainTwo {
         short ch=0;
         JavaFunctionalProgram javaFunctionalProgram = new JavaFunctionalProgram();
         do {
-            System.out.printf("\n1. Two Dimensional Array\n2. Distance\n3. Quadratic Eq\n0. Exit\n");
+            System.out.printf("\n1. Two Dimensional Array\n2. Distance\n3. Quadratic Eq\n5. Wind Chill\n0. Exit\n");
             Scanner in = new Scanner(System.in);
             System.out.print("Enter choice: ");
             ch=in.nextShort();
@@ -18,6 +18,8 @@ public class MainTwo {
                 case 2: javaFunctionalProgram.calculateDistance();
                     break;
                 case 3: javaFunctionalProgram.quadraticEquation();
+                    break;
+                case 5: javaFunctionalProgram.checkWindChill(45.0,44.0);
                     break;
 
                 case 0:
