@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class JavaFunctionalProgram {
-    public void TwoDimentionalArray(){
+    public void twoDimensionalArray(){
         Scanner input=new Scanner(System.in);
         System.out.printf("Enter number rows");
         int row=input.nextInt();

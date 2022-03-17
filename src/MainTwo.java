@@ -1,4 +1,3 @@
-import BasicProgram.CoreJavaPrograms;
 import FunctionProgram.JavaFunctionalProgram;
 
 import java.util.Scanner;
@@ -13,7 +12,7 @@ public class MainTwo {
             System.out.print("Enter choice: ");
             ch=in.nextShort();
             switch (ch){
-                case 1: javaFunctionalProgram.TwoDimentionalArray();
+                case 1: javaFunctionalProgram.twoDimensionalArray();
                     break;
                 case 2: javaFunctionalProgram.calculateDistance();
                     break;

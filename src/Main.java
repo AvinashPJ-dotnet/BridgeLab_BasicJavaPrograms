@@ -9,7 +9,7 @@ public class Main {
         CoreJavaPrograms coreJavaPrograms = new CoreJavaPrograms();
         do {
             System.out.printf("\n1. FlopCoin\n2. Leap Year\n3. Power Of Two\n" +
-                    "4. Harmonic\n6. Quotient & Reminder\n7. Swap Two Number\n" +
+                    "4. Harmonic\n5. Prime Factors\n6. Quotient & Reminder\n7. Swap Two Number\n" +
                     "8. Even or Odd\n9. Vowel or Consonant\n0. Exit\n");
             Scanner in = new Scanner(System.in);
             System.out.print("Enter choice: ");
@@ -23,6 +23,8 @@ public class Main {
                     break;
                 case 4: coreJavaPrograms.calculateHarmonicNumber(10);
                     break;
+                case 5: coreJavaPrograms.findPrimeFactors();
+                    break;
                 case 6: coreJavaPrograms.findQuotientAndReminder(10,3);
                     break;
                 case 7: coreJavaPrograms.computeSwapTwoNumber(10,3);
@@ -32,10 +34,6 @@ public class Main {
                 case 9: coreJavaPrograms.checkAlphabetVowelOrConsonant();
                     break;
                 case 10: coreJavaPrograms.checkLargestNumber();
-                    break;
-                case 11:
-                    JavaFunctionalProgram javaFunctionalProgram = new JavaFunctionalProgram();
-                    javaFunctionalProgram.TwoDimentionalArray();
                     break;
 
                 case 0:
